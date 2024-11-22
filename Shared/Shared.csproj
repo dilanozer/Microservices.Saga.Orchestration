@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="OrderEvents\" />
+    <None Remove="StockEvents\" />
+    <None Remove="PaymentEvents\" />
+    <None Remove="Messages\" />
+    <None Remove="Settings\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="OrderEvents\" />
+    <Folder Include="StockEvents\" />
+    <Folder Include="PaymentEvents\" />
+    <Folder Include="Messages\" />
+    <Folder Include="Settings\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MassTransit" Version="7.3.1" />
+    <PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="7.3.1" />
+  </ItemGroup>
+</Project>
